@@ -1,0 +1,8 @@
+<h2>Welcome, {{ email }}!</h2>
+<button (click)="logout()">Logout</button>
+<h3>Online Users:</h3>
+<ul>
+  <li *ngFor="let user of onlineusers">
+    User {{ user.name }} is online since {{ user.onlinesince }} hours
+  </li>
+</ul>
