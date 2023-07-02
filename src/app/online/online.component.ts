@@ -35,7 +35,7 @@ export class OnlineComponent implements OnInit {
     const data = {
       email: this.email,
     };
-    this.http.post("hhttps://container3-qcsav7gtbq-nn.a.run.app/logout", data)
+    this.http.post("https://container3-qcsav7gtbq-nn.a.run.app/logout", data)
     .subscribe(
       (response: Object) => {
         this.router.navigate(['']);
